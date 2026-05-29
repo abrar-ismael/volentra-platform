@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Bilgilerim - Volentra</title>
+    <link rel="icon" type="image/x-icon" href="img/volentra_favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-ebony sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/volentra_logo.png" alt="Volentra" class="volentra-logo-img" />
+                <span class="volentra-brand-text">Volentra</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#volentraNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="volentraNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bagis">Bağış Yap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#etkinlikler">Etkinlikler</a></li>
+                    <li class="nav-item"><a class="nav-link active " href="#profil">Profil Bilgileri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#giris">Çıkış Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1 d-flex align-items-center py-5">
+        <div class="container">
+            <div class="card card-volentra border-0 mx-auto" style="max-width: 600px; border-radius: 1.5rem;">
+                <div class="card-body p-4 p-md-5">
+                    <div class="text-center mb-4">
+                        <i class="ti ti-user-edit fs-1" style="color: var(--ebony);"></i>
+                        <h4 class="fw-bold mt-2">Profil Bilgilerini Güncelle</h4>
+                        <div class="volentra-badge-pill mt-2 mx-auto">Gönüllü Üye</div>
+                    </div>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Ad</label>
+                                <input type="text" class="form-control form-control-volentra" value="Ayşe" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Soyad</label>
+                                <input type="text" class="form-control form-control-volentra" value="Yılmaz" />
+                            </div>
+                            <div class="col-md-7">
+                                <label class="form-label fw-semibold">E-posta</label>
+                                <input type="email" class="form-control form-control-volentra" value="ayse@gmail.com" />
+                            </div>
+                            <div class="col-md-5">
+                                <label class="form-label fw-semibold">Telefon</label>
+                                <input type="tel" class="form-control form-control-volentra" value="0532 000 00 00" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold">Yaş</label>
+                                <input type="number" class="form-control form-control-volentra" value="21" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold">Cinsiyet</label>
+                                <select class="form-select form-select-volentra">
+                                    <option>Erkek</option>
+                                    <option selected>Kadın</option>
+                                    <option>Diğer</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold">Şehir</label>
+                                <input type="text" class="form-control form-control-volentra" value="Mersin" />
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Eğitim Durumu</label>
+                                <select class="form-select form-select-volentra">
+                                    <option>Lise</option>
+                                    <option>Ön Lisans</option> 
+                                    <option selected>Lisans </option>
+                                    <option>Yüksek Lisans</option>
+                                    <option>Doktora</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Şifre</label>
+                                <input type="password" class="form-control form-control-volentra" value="*******" />
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-volentra w-100 py-2 shadow-sm rounded-pill">
+                                    Bilgileri Kaydet
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center mt-4">
+                        <a href="index.html" class="text-muted small text-decoration-none">← Anasayfaya Dön</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-ebony text-white mt-auto py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
+        <div class="fw-semibold">Volentra &copy; 2026</div>
+        <div class="text-white-50">Gönüllülük ve sosyal yardımlaşma platformu.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

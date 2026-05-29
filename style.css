@@ -1,0 +1,188 @@
+:root {
+  --coffee-bean: #7f5539ff;
+  --camel: #a68a64ff;
+  --almond-cream: #ede0d4ff;
+  --dusty-olive: #656d4aff;
+  --ebony: #414833ff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans",
+    "Liberation Sans", sans-serif;
+  background: var(--almond-cream);
+}
+
+/* Soft section background */
+.bg-soft {
+  background: rgba(166, 138, 100, 0.12);
+}
+
+/* Navbar */
+.bg-ebony {
+  background-color: var(--ebony);
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.92);
+
+
+
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--dusty-olive);
+  transform: translateY(-1px);
+}
+
+
+
+.volentra-brand-text {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.45rem;
+  letter-spacing: 0.2px;
+}
+
+
+
+
+.volentra-logo-img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+
+/* Cards */
+.card-volentra {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.card-volentra {
+  box-shadow: 0 10px 30px rgba(65, 72, 51, 0.12);
+}
+
+/* Form controls */
+.form-control-volentra,
+.form-select-volentra {
+  border-radius: 0.9rem;
+  border-color: rgba(65, 72, 51, 0.18);
+}
+
+.form-control-volentra:focus,
+.form-select-volentra:focus {
+  border-color: var(--coffee-bean);
+  box-shadow: 0 0 0 0.2rem rgba(127, 85, 57, 0.22);
+}
+
+
+/* Button */
+.btn-volentra {
+  background: var(--dusty-olive);
+  border-color: var(--dusty-olive);
+  color: #fff;
+  font-weight: 800;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn-volentra:hover {
+  background: var(--coffee-bean);
+  border-color: var(--coffee-bean);
+  color: #fff;
+}
+
+.btn-volentra:focus {
+  box-shadow: 0 0 0 0.25rem rgba(101, 109, 74, 0.25);
+}
+
+/* Badges */
+.badge {
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.55em 0.9em;
+  letter-spacing: 0.1px;
+}
+
+.badge.status-approved {
+  background: rgba(101, 109, 74, 0.18);
+  color: var(--dusty-olive);
+  border: 1px solid rgba(101, 109, 74, 0.35);
+}
+
+.badge.status-rejected {
+  background: rgba(127, 85, 57, 0.18);
+  color: var(--coffee-bean);
+  border: 1px solid rgba(127, 85, 57, 0.35);
+}
+
+.badge.status-pending {
+  background: rgba(166, 138, 100, 0.18);
+  color: var(--camel);
+  border: 1px solid rgba(166, 138, 100, 0.35);
+}
+
+.badge.status-completed {
+  background: rgba(127, 85, 57, 0.18);
+  color: var(--coffee-bean);
+  border: 1px solid rgba(127, 85, 57, 0.35);
+}
+
+/* Table */
+.table {
+  color: #2a2f21;
+}
+
+.table thead th {
+  color: var(--ebony);
+  border-bottom: 1px solid rgba(65, 72, 51, 0.12);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(101, 109, 74, 0.10);
+}
+
+/* Footer text */
+footer {
+  background-color: var(--ebony) !important;
+}
+
+/* Small pill */
+.volentra-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(101, 109, 74, 0.14);
+  color: var(--dusty-olive);
+  font-weight: 700;
+}
+
+.btn-action {
+  border: none;
+  background: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-action.approve { color: var(--dusty-olive); border: 1px solid #d4ddd0; }
+.btn-action.approve:hover { background: var(--dusty-olive); color: white; }
+
+.btn-action.reject { color: var(--coffee-bean); border: 1px solid #eaded6; }
+.btn-action.reject:hover { background: var(--coffee-bean); color: white; }
